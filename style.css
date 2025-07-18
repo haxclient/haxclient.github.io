@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 80%;
+    height: auto;
+    background-color: #fff;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: #fff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    /* position: */
+    transition: 0.2s;
+}
+
+.nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav .logo #hax-logo {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    /* font-size: 24px; */
+}
+
+.nav img {
+    height: 50px;
+    width: 50px;
+}
+
+.nav-button {
+    background-color: #fff;
+    border: none;
+    width: 140px;
+    height: 50px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.nav-button:hover {
+    background-color: #B6F500;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-img img {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    filter: blur(4px);
+}
+
+.content-img div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.rainbow-text {
+    user-select: none;
+    color: white;
+    background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0,255,0) 14.28%,
+                rgb(0,255,255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+    background-size: 600vw 600vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 10s linear infinite forwards;
+}
+
+@keyframes slide {
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 700vw;
+  }
+}
+
+.content-information {
+    width: 95%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#about-title {
+    font-size: 24px
+}
+
+.content-information p {
+    font-size: 17px;
+    padding-top: 10px;
+}
+
+.content-download {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.content-download-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.content-download p {
+    padding-bottom: 10px
+}
+
+.available {
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #B6F500;
+    border: none;
+    transition: 0.2s;
+}
+
+.available:hover {
+    background-color: #98CD00;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    height: 180px;
+    /* background-color: aqua; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer p {
+    font-size: 16px;
+}
+
+.upper-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.upper-footer div {
+    font-size: 18px;
+    padding: 3px;
+}
+
+.upper-footer div a {
+    color: #B6F500;
+    transition: 0.2s;
+}
+
+.upper-footer div a:hover {
+    color: #98CD00;
+    text-decoration: underline;
+}
+
+#phone {
+    font-size: 18px;
+    background-color: #fff;
+    border: none;
+    transition: 0.2s;
+    color: #B6F500;
+}
+
+#phone:hover {
+    color: #98CD00;
+    cursor: pointer;
+}
+
+#discord {
+    font-size: 18px;
+    background-color: #fff;
+    border: none;
+    transition: 0.2s;
+    color: #B6F500;
+}
+
+#discord:hover {
+    color: #98CD00;
+    cursor: pointer;
+}
+
+.comming-soon {
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #b0b0b0;
+    border: none;
+    transition: 0.2s;
+}
+
+.comming-soon:hover {
+    cursor: pointer;
+}
